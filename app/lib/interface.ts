@@ -1,12 +1,13 @@
+import { ImageAsset } from 'sanity'
 export interface simpleBlogCard {
     title: string;
     description: string;
     currentSlug: string;
-    titleImage: any;
+    titleImage: ImageAsset;
 }
 export interface fullBlog {
     currentSlug:string;
     title: string;
     content: any;
-    titleImage: any;
+    titleImage: ImageAsset;
 }
