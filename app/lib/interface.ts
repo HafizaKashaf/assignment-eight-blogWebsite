@@ -1,3 +1,4 @@
+import { PortableTextBlock } from '@portabletext/react';
 import { ImageAsset } from 'sanity'
 export interface simpleBlogCard {
     title: string;
@@ -8,6 +9,6 @@ export interface simpleBlogCard {
 export interface fullBlog {
     currentSlug:string;
     title: string;
-    content: any;
+    content: PortableTextBlock[];
     titleImage: ImageAsset;
 }
